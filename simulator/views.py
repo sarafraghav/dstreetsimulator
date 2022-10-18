@@ -35,7 +35,7 @@ def Lauth(request):
                   y = lauth(user=company,league=s,balance=100000)
                   y.save()
               elif a.game_code == "DSTREET01":
-                  s = league(name="Dstreet",description="Check",starting_balance= 1500000,game_code=a.game_code)
+                  s = league(name="Dstreet",description="Check",starting_balance= 1500000,game_code=a.game_code, trading_active= True)
                   s.save()
                   s.users.add(company)
                   s.save()
